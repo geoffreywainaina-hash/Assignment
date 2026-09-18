@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+header{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+
+    align-items: flex-start;
+    padding-top: 10px;
+    background-color: #f28482;  
+}
+
+#page{
+    flex: 1;
+    padding: 25px;
+}
+
+#page h1{
+    background-color: #f28482;
+    color: #f7ede2;
+    text-align: center;
+
+    border-radius: 15px;
+}
+
+#page p{
+    /* background-color: orange; */
+    padding-left: 20px;
+    color: #84a59d;
+    font-size: larger;
+}
+
+#page ol{
+    color: #988080;
+}
+
+.hamburger{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger span{
+    width: 25px;
+    height: 3px;
+    background: black;
+}
+
+nav a{
+    text-decoration: none;
+    color: #f7ede2;
+    font-size: larger;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    transition: width 0.3s ease;
+    padding-top: 35px;
+    gap: 10px;
+
+    height: 100vh;
+    width: 0;
+    background: white;
+
+    box-sizing: border-box;
+    padding-left: 1px;
+}
+
+.nav-menu.active{
+    width: 50px;
+    background-color: #f28482;
+}
